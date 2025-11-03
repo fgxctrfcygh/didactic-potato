@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    console.log("Hello, World!");   
+           let son = 7.12;
+           console.log(parseInt(son));
+        
+         let num = 12/8;
+         console.log(parseFloat(num));
+        
+         console.log("salom".toUpperCase());
+        
+        console.log("SALOM".toLowerCase());
+        
+        console.log("   salom    ".trim());
+        console.log("salom".charAt(2));
+        console.log("ha".repeat(4));
+        
+        console.log("salom".startsWith("a"));
+        
+        console.log("salom".endsWith("b"));
+        
+        console.log("salom".includes("g'"));
+        
+        console.log(["s", "a", "l", "o", "m"].reverse());
+        
+        console.log("salom".replace("lom", "rvar"));
+        
+        console.log("salom".slice(7, 4));
+       
+        console.log("salom".substring(4, 1));
+     
+        console.log("       salom   ".trimStart());
+       
+        console.log("              salom       ".trimEnd());
+       
+              let soz = "MeningIsmimBehruz";
+        console.log(soz.length);
+
+        
+        console.log(soz.charAt(3));
+
+       
+        console.log(soz.includes("Ism"));
+
+        console.log(soz.slice(11, 17).toUpperCase());
+       
+        console.log(soz.substring(11, 17));
+        
+
+       
+         let fruits = ["mandarin", "ananas", "shaftoli"]  
+         console.log(fruits);
+
+         let numbers = [1, 2, 4, 6, 7, 9]   
+         console.log(numbers);
+
+         let mixed = ["salom", 1, 2, 3, true, null]
+         console.log(mixed);   
+         console.log(fruits[2]); 
+         console.log(fruits.length); 
+         fruits[0]="gilos";  
+         fruits.push("banan", "bodring"); 
+         console.log(fruits);
+         fruits.unshift("ananas"); 
+         console.log(fruits);
+         fruits.pop() 
+         console.log(fruits);
+         fruits.shift() 
+         console.log(fruits);
+         fruits.splice(2);
+         console.log(fruits);
+
+         let food =fruits.concat(numbers, mixed)
+         console.log(food); 
+         console.log(Array.isArray(food));  
+        
+        for (let i=0; i<fruits.length; i++){
+            console.log(fruits[i]);   
+        }
+        let fruits1 = ["apple", "banana", "cherry"];
+      fruits1.forEach(function(fruit) {
+       console.log(fruit); 
+    
+      });
+    
+
+      console.log(fruits.indexOf("anor"));  
+      console.log(fruits.find(fruit => fruit.startsWith("g"))); 
+      numbers.sort();
+      console.log(numbers) ;
+      fruits.sort();
+      console.log(fruits); 
+
+      let doubled = numbers.map(function(number){
+        return number ** 2;
+      })
+      console.log(doubled); 
+   </script> 
+</body>
+</html>
